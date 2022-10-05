@@ -1,4 +1,5 @@
-/** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
@@ -10,6 +11,10 @@ module.exports = {
         jetbrains: ["JetBrains Mono"],
         audiowide: ["Audiowide"],
       },
+    },
+    screens: {
+      xs: "450px",
+      ...defaultTheme.screens,
     },
   },
   plugins: [],

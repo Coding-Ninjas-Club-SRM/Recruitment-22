@@ -39,54 +39,54 @@ function Timer() {
   return (
     <div className="flex flex-row items-center text-white font-jetbrains">
       <div className="flex flex-col items-center">
-        <h2 className="text-xl mb-2">Days</h2>
-        <div className="text-7xl flex flex-row">
-          <p className="rounded-md border-[1px] border-white mx-[2px]">
+        <h2 className="text-sm xs:text-base md:text-xl mb-2">Days</h2>
+        <div className="text-3xl xs:text-5xl md:text-7xl flex flex-row">
+          <p className="rounded-sm xs:rounded-md border-[1px] border-white mx-[2px]">
             {parseInt(days / 10)}
           </p>
-          <p className="rounded-md border-[1px] border-white mx-[2px]">
+          <p className="rounded-sm xs:rounded-md border-[1px] border-white mx-[2px]">
             {days % 10}
           </p>
         </div>
       </div>
 
-      <p className="text-7xl mt-auto mx-[2px]">:</p>
+      <p className="text-3xl xs:text-5xl md:text-7xl mt-auto mx-[2px]">:</p>
 
       <div className="flex flex-col items-center">
-        <h2 className="text-xl mb-2">Hours</h2>
-        <div className="text-7xl flex flex-row">
-          <p className="rounded-md border-[1px] border-white mx-[2px]">
+        <h2 className="text-sm xs:text-base md:text-xl mb-2">Hours</h2>
+        <div className="text-3xl xs:text-5xl md:text-7xl flex flex-row">
+          <p className="rounded-sm xs:rounded-md border-[1px] border-white mx-[2px]">
             {parseInt(hours / 10)}
           </p>
-          <p className="rounded-md border-[1px] border-white mx-[2px]">
+          <p className="rounded-sm xs:rounded-md border-[1px] border-white mx-[2px]">
             {hours % 10}
           </p>
         </div>
       </div>
 
-      <p className="text-7xl mt-auto mx-[2px]">:</p>
+      <p className="text-3xl xs:text-5xl md:text-7xl mt-auto mx-[2px]">:</p>
 
       <div className="flex flex-col items-center">
-        <h2 className="text-xl mb-2">Minutes</h2>
-        <div className="text-7xl flex flex-row">
-          <p className="rounded-md border-[1px] border-white mx-[2px]">
+        <h2 className="text-sm xs:text-base md:text-xl mb-2">Minutes</h2>
+        <div className="text-3xl xs:text-5xl md:text-7xl flex flex-row">
+          <p className="rounded-sm xs:rounded-md border-[1px] border-white mx-[2px]">
             {parseInt(minutes / 10)}
           </p>
-          <p className="rounded-md border-[1px] border-white mx-[2px]">
+          <p className="rounded-sm xs:rounded-md border-[1px] border-white mx-[2px]">
             {minutes % 10}
           </p>
         </div>
       </div>
 
-      <p className="text-7xl mt-auto mx-[2px]">:</p>
+      <p className="text-3xl xs:text-5xl md:text-7xl mt-auto mx-[2px]">:</p>
 
       <div className="flex flex-col items-center">
-        <h2 className="text-xl mb-2">Seconds</h2>
-        <div className="text-7xl flex flex-row">
-          <p className="rounded-md border-[1px] border-white mx-[2px]">
+        <h2 className="text-sm xs:text-base md:text-xl mb-2">Seconds</h2>
+        <div className="text-3xl xs:text-5xl md:text-7xl flex flex-row">
+          <p className="rounded-sm xs:rounded-md border-[1px] border-white mx-[2px]">
             {parseInt(seconds / 10)}
           </p>
-          <p className="rounded-md border-[1px] border-white mx-[2px]">
+          <p className="rounded-sm xs:rounded-md border-[1px] border-white mx-[2px]">
             {seconds % 10}
           </p>
         </div>

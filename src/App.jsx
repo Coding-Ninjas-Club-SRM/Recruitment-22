@@ -6,7 +6,7 @@ import Navbar from "./Components/Navbar/Navbar";
 
 function App() {
   return (
-    <div>
+    <div className="bg-black text-white">
       <Navbar />
       <Landing />
       <About />
