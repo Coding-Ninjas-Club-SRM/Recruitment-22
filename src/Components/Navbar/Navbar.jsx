@@ -1,10 +1,15 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import cnlogo from "./assets/cnlogo.png";
-import style from "./Navbar.module.css";
+import { useScrollPosition } from "./hooks/scrollPosition";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const scrollPosition = useScrollPosition()
+
+   function classNames(...classes) {
+    return classes.filter(Boolean).join(' ')
+  }
 
   const links = [
     {
@@ -24,17 +29,20 @@ const Navbar = () => {
   return (
     <div
       id="navbar"
-      className="flex justify-between items-center w-full h-24 px-4 text-white text-2xl bg-transparent fixed font-jetbrains"
+      className={classNames(
+        scrollPosition > 0 ? 'backdrop-blur' : 'bg-transparent',
+        'flex justify-between items-center w-full h-24 p-8 text-white text-2xl  fixed font-jetbrains',
+      )}
     >
       <div className="w-60">
-        <img src={cnlogo} alt="" />
+        <img src={cnlogo} alt="CN LOGO" />
       </div>
 
       <ul className="hidden md:flex">
         {links.map(({ id, link, doff }) => (
           <li
             key={id}
-            className="px-4 cursor-pointer capitalize font-medium hover:scale-105 duration-200"
+            className="px-12 cursor-pointer capitalize font-medium hover:scale-105 duration-200"
           >
             {link}
           </li>
