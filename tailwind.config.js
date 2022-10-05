@@ -2,7 +2,15 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        landingbg: "url('/src/Components/Landing/assets/background.png')",
+      },
+      fontFamily: {
+        jetbrains: ["JetBrains Mono"],
+        audiowide: ["Audiowide"],
+      },
+    },
   },
   plugins: [],
 };
