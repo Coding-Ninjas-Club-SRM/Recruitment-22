@@ -7,12 +7,14 @@ import { domContent as content } from "./Subcomponents/content";
 function Domains() {
 
   return (
-    <section className=" min-h-screen">
-      <div>
-        <h1 className="heading">Domains</h1>
-      </div>
-      <div>
-        <img className="line" src={line}></img>
+    <section className={` min-h-screen ${style.domainsSection}`}>
+      <div className={`${style.domainHead}`}>
+        <div>
+          <h1 className="heading">Domains</h1>
+        </div>
+        <div>
+          <img className="line" src={line}></img>
+        </div>
       </div>
       <div className="content  m-0 md:m-[75px]">
         {content.map(e => <DomainBlock title = {e.title} details = {e.details} image = {e.image}/>)}
