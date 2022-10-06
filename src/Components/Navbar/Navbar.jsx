@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-scroll";
 import cnlogo from "./assets/cnlogo.png";
 import style from "./Navbar.module.css";
 
@@ -26,8 +27,10 @@ const Navbar = () => {
       id="navbar"
       className="flex justify-between items-center w-full h-24 px-4 text-white text-2xl bg-transparent fixed font-jetbrains z-20"
     >
-      <div className="w-32 xs:w-36 sm:w-44 md:w-52">
-        <img src={cnlogo} alt="" />
+      <div className="w-32 xs:w-36 sm:w-44 md:w-52 cursor-pointer">
+        <Link to="landing" smooth duration={500} offset={-96}>
+          <img src={cnlogo} alt="" />
+        </Link>
       </div>
 
       <ul className="hidden md:flex">
@@ -36,7 +39,9 @@ const Navbar = () => {
             key={id}
             className="px-4 cursor-pointer capitalize font-medium hover:scale-105 duration-200"
           >
-            {link}
+            <Link to={link} smooth duration={500} offset={-96}>
+              {link}
+            </Link>
           </li>
         ))}
       </ul>
@@ -56,7 +61,9 @@ const Navbar = () => {
                 key={id}
                 className="px-4 py-6 text-3xl capitalize font-medium"
               >
-                {link}
+                <Link to={link} smooth duration={500} offset={-96}>
+                  {link}
+                </Link>
               </li>
             ))}
           </ul>

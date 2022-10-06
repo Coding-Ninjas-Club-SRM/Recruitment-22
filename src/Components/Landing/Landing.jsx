@@ -17,7 +17,10 @@ function Landing() {
   }, []);
 
   return (
-    <div className="w-full h-screen flex flex-col justify-center items-center">
+    <div
+      name="landing"
+      className="w-full h-screen flex flex-col justify-center items-center"
+    >
       <div className="md:pl-[84px] py-6 md:self-start">
         <Timer className="py-4" />
         <p className="text-gray-500 text-xl xs:text-2xl flex flex-row items-center font-audiowide tracking-[0.21em] py-4">
@@ -103,9 +106,6 @@ function Landing() {
               enable: true,
               opacity: 0.5,
               width: 1,
-            },
-            collisions: {
-              enable: true,
             },
             move: {
               directions: "none",
