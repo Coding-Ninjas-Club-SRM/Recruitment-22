@@ -14,7 +14,7 @@ function Domains() {
       <div>
         <img className="line" src={line}></img>
       </div>
-      <div className="content  m-[75px] ">
+      <div className="content  m-0 md:m-[75px]">
         {content.map(e => <DomainBlock title = {e.title} details = {e.details} image = {e.image}/>)}
       </div>
     </section>
