@@ -1,0 +1,27 @@
+.textShadowRed {
+    text-shadow: -2px 0 10px #EE4623;
+}
+
+.details {
+    border-left: #EE4623 5px solid;
+}
+
+.font {
+    font-family: 'JetBrains Mono';
+}
+
+.blockParent {
+    display: grid;
+    grid-template-columns: 1fr 33vw;
+    column-gap: 6ch;
+    align-items: center;
+}
+
+.blockParent:nth-of-type(2n) {
+    grid-template-columns: 33vw 1fr;
+}
+
+.blockParent:nth-of-type(2n) div:nth-of-type(2) {
+    grid-row-start: 1;
+    grid-column-start: 1;
+}

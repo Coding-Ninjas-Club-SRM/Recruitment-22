@@ -7,33 +7,33 @@ function About() {
   return (
     <div className="about">
       <div>
-      <h1 className="heading">About</h1>
+        <h1 className="heading">About</h1>
       </div>
-<div>
-  <img className="line" src={line}></img>
-</div>
+      <div>
+        <img className="line" src={line}></img>
+      </div>
 
       <div className="middle-abt">
 
-          <div className="ab-txt" > 
-            <span >
+        <div className="ab-txt" >
+          <span >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-             Mauris eu rhoncus quam justo aliquet non. Potenti 
-             aliquam arcu, dignissim ut sed facilisi
-              mi suspendisse. Neque cras mi quis molestie amet. 
-              Gravida gravida semper vulputate praesent</span>
-          </div>
-          <div className="img-abt">
-            <img 
+            Mauris eu rhoncus quam justo aliquet non. Potenti
+            aliquam arcu, dignissim ut sed facilisi
+            mi suspendisse. Neque cras mi quis molestie amet.
+            Gravida gravida semper vulputate praesent</span>
+        </div>
+        <div className="img-abt">
+          <img
             src={frame}
             alt="h">
 
-            </img>
-          </div>
+          </img>
+        </div>
 
 
       </div>
-      
+
     </div>
   );
 }
