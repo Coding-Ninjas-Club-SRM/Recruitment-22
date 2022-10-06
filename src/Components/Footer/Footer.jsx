@@ -1,12 +1,12 @@
 import React from "react";
-import style from "./Footer.module.css";
 import line from "./assets/line.svg";
+import style from "./Footer.module.css";
 function Footer() {
   return (
     <footer className="dark:bg-opacity-60 backdrop-blur-lg backdrop-filter bg-neutral-900 dark:bg-neutral-900">
       <div className="flex flex-col justify-between items-center font-jetbrains gap-5 py-8 px-5 md:flex-row">
         {/* Useful links */}
-        <div className="px-20 w-1/3">
+        <div className="px-20 w-full md:w-1/3">
           <h2 className="mb-6 text-sm font-bold text-orange-700 text-center dark:text-orange-700">
             Useful Links
           </h2>
@@ -29,9 +29,11 @@ function Footer() {
           </ul>
         </div>
         {/* Social media handles */}
-        <div className="container mb-[30px]  w-1/3">
+        <div className="container mb-[30px]  w-full md:w-1/3">
           <div classNameName="md:flex md:items-center md:justify-center">
-            <div className="text-white text-center mx-auto mb-5 mt-7">Follow Us</div>
+            <div className="text-white text-center mx-auto mb-5 mt-7">
+              Follow Us
+            </div>
           </div>
           <div className="flex md:space-x-4 space-x-3 justify-center md:justify-center md:mt-0">
             <a
@@ -100,7 +102,7 @@ function Footer() {
           </div>
         </div>
         {/* Services */}
-        <div className="px-20  w-1/3">
+        <div className="px-20  w-full md:w-1/3">
           <h2 className="mb-6 text-sm font-bold text-gray-500 text-center dark:text-orange-700">
             Domains
           </h2>
@@ -112,12 +114,12 @@ function Footer() {
             </li>
             <li className="mb-4">
               <a href="#" className="">
-                Creatives 
+                Creatives
               </a>
             </li>
             <li className="mb-4">
               <a href="#" className="">
-                Corporate 
+                Corporate
               </a>
             </li>
           </ul>
