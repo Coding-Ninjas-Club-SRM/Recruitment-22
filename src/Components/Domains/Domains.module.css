@@ -1,0 +1,60 @@
+.textShadowRed {
+    text-shadow: -2px 0 10px #EE4623;
+}
+
+.details {
+    border-left: #EE4623 5px solid;
+}
+
+.font {
+    font-family: 'JetBrains Mono';
+}
+
+.blockParent {
+    display: grid;
+    grid-template-columns: 1fr 33vw;
+    column-gap: 6ch;
+    align-items: center;
+}
+
+.blockParent:nth-of-type(2n) {
+    grid-template-columns: 33vw 1fr;
+}
+
+.blockParent:nth-of-type(2n) div:nth-of-type(2) {
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+
+.domainsSection { 
+    display: block;
+}
+
+
+@media (max-aspect-ratio : 1/1) {
+    .blockParent {
+        display: block;
+    }
+    
+    .details {
+        border: none;
+        text-align: center;
+        margin: auto;
+        padding: 0 1ch;
+    }
+    
+    .blockParent > div {
+        margin: auto;
+    }
+    
+    .blockParent div:nth-of-type(2) {
+        width: 80vw;
+        height: 80vw;
+    }
+
+    .domainHead {
+        width: min-content;
+        margin: 0;
+        margin: auto;
+    }
+}

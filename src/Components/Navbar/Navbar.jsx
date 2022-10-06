@@ -24,9 +24,9 @@ const Navbar = () => {
   return (
     <div
       id="navbar"
-      className="flex justify-between items-center w-full h-24 px-4 text-white text-2xl bg-transparent fixed font-jetbrains"
+      className="flex justify-between items-center w-full h-24 px-4 text-white text-2xl bg-transparent fixed font-jetbrains z-20"
     >
-      <div className="w-60">
+      <div className="w-32 xs:w-36 sm:w-44 md:w-52">
         <img src={cnlogo} alt="" />
       </div>
 
@@ -49,7 +49,7 @@ const Navbar = () => {
       </div>
 
       {nav && (
-        <div className="z-20 flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-black">
+        <div className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-black">
           <ul className="flex flex-col justify-center items-center">
             {links.map(({ id, link, moff }) => (
               <li
