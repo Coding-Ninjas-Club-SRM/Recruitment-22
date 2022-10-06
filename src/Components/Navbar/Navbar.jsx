@@ -69,7 +69,13 @@ const Navbar = () => {
                 key={id}
                 className="px-4 py-6 text-3xl capitalize font-medium"
               >
-                <Link to={link} smooth duration={500} offset={-96}>
+                <Link
+                  onClick={() => setNav(!nav)}
+                  to={link}
+                  smooth
+                  duration={500}
+                  offset={-96}
+                >
                   {link}
                 </Link>
               </li>
