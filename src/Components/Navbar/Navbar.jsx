@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import cnlogo from "./assets/cnlogo.png";
+import cnlogo from "./assets/CnLogo.svg";
 import { useScrollPosition } from "./hooks/scrollPosition";
 
 const Navbar = () => {
@@ -42,7 +42,7 @@ const Navbar = () => {
         {links.map(({ id, link, doff }) => (
           <li
             key={id}
-            className="px-12 cursor-pointer capitalize font-medium hover:scale-105 duration-200"
+            className="px-6 lg-col-px-12 cursor-pointer capitalize font-medium hover:scale-105 duration-200"
           >
             {link}
           </li>
