@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-scroll";
 import cnlogo from "./assets/cnlogo.png";
 import { useScrollPosition } from "./hooks/scrollPosition";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-  const scrollPosition = useScrollPosition()
+  const scrollPosition = useScrollPosition();
 
-   function classNames(...classes) {
-    return classes.filter(Boolean).join(' ')
+  function classNames(...classes) {
+    return classes.filter(Boolean).join(" ");
   }
 
   const links = [
@@ -30,12 +31,14 @@ const Navbar = () => {
     <div
       id="navbar"
       className={classNames(
-        scrollPosition > 0 ? 'bg-black' : 'bg-transparent',
-        'flex justify-between items-center w-full h-24 p-8 text-white text-2xl  fixed font-jetbrains z-20',
+        scrollPosition > 0 ? "bg-black" : "bg-transparent",
+        "flex justify-between items-center w-full h-24 p-8 text-white text-2xl  fixed font-jetbrains z-20",
       )}
     >
-      <div className="w-32 xs:x-36 sm:w-44 md:w-52 pb-4">
-        <img src={cnlogo} alt="CN LOGO" />
+      <div className="w-32 xs:w-36 sm:w-44 md:w-52 pb-4 cursor-pointer">
+        <Link to="landing" smooth duration={500} offset={-96}>
+          <img src={cnlogo} alt="" />
+        </Link>
       </div>
 
       <ul className="hidden md:flex">
@@ -44,7 +47,9 @@ const Navbar = () => {
             key={id}
             className="px-12 cursor-pointer capitalize font-medium hover:scale-105 duration-200"
           >
-            {link}
+            <Link to={link} smooth duration={500} offset={-96}>
+              {link}
+            </Link>
           </li>
         ))}
       </ul>
@@ -64,7 +69,9 @@ const Navbar = () => {
                 key={id}
                 className="px-4 py-6 text-3xl capitalize font-medium"
               >
-                {link}
+                <Link to={link} smooth duration={500} offset={-96}>
+                  {link}
+                </Link>
               </li>
             ))}
           </ul>
