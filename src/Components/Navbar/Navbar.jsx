@@ -2,10 +2,15 @@ import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 import cnlogo from "./assets/cnlogo.png";
-import style from "./Navbar.module.css";
+import { useScrollPosition } from "./hooks/scrollPosition";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const scrollPosition = useScrollPosition();
+
+  function classNames(...classes) {
+    return classes.filter(Boolean).join(" ");
+  }
 
   const links = [
     {
@@ -25,9 +30,12 @@ const Navbar = () => {
   return (
     <div
       id="navbar"
-      className="flex justify-between items-center w-full h-24 px-4 text-white text-2xl bg-transparent fixed font-jetbrains z-20"
+      className={classNames(
+        scrollPosition > 0 ? "bg-black" : "bg-transparent",
+        "flex justify-between items-center w-full h-24 p-8 text-white text-2xl  fixed font-jetbrains z-20",
+      )}
     >
-      <div className="w-32 xs:w-36 sm:w-44 md:w-52 cursor-pointer">
+      <div className="w-32 xs:w-36 sm:w-44 md:w-52 pb-4 cursor-pointer">
         <Link to="landing" smooth duration={500} offset={-96}>
           <img src={cnlogo} alt="" />
         </Link>
@@ -37,7 +45,7 @@ const Navbar = () => {
         {links.map(({ id, link, doff }) => (
           <li
             key={id}
-            className="px-4 cursor-pointer capitalize font-medium hover:scale-105 duration-200"
+            className="px-6 lg-col-px-12 cursor-pointer capitalize font-medium hover:scale-105 duration-200"
           >
             <Link to={link} smooth duration={500} offset={-96}>
               {link}
