@@ -27,15 +27,15 @@ const Navbar = () => {
       </div>
 
       <ul className="hidden md:flex">
-        <li className="px-6 lg-col-px-12 cursor-pointer capitalize font-medium hover:scale-105 duration-200">
+        <li className="px-6 lg:px-12 cursor-pointer capitalize font-medium hover:scale-105 duration-200">
           <a href="mailto:codingninjasatsrm@gmail.com">Contact Us</a>
         </li>
-        <li className="px-6 lg-col-px-12 cursor-pointer capitalize font-medium hover:scale-105 duration-200">
+        <li className="px-6 lg:px-12 cursor-pointer capitalize font-medium hover:scale-105 duration-200">
           <Link to={"about us"} smooth duration={500} offset={-96}>
             About Us
           </Link>
         </li>
-        <li className="px-6 lg-col-px-12 cursor-pointer capitalize font-medium hover:scale-105 duration-200">
+        <li className="px-6 lg:px-12 cursor-pointer capitalize font-medium hover:scale-105 duration-200">
           <Link to={"domains"} smooth duration={500} offset={-96}>
             Domains
           </Link>
