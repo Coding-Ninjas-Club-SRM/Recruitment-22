@@ -1,6 +1,5 @@
 import React from "react";
-import line from "./assets/line.svg";
-import style from "./Footer.module.css";
+
 function Footer() {
   return (
     <footer className="dark:bg-opacity-60 backdrop-blur-lg backdrop-filter bg-neutral-900 dark:bg-neutral-900">
@@ -11,27 +10,26 @@ function Footer() {
             Useful Links
           </h2>
           <ul className="text-white dark:text-white text-center">
-            <li className="mb-4">
-              <a href="#" className="">
-                Events
-              </a>
-            </li>
-            <li className="mb-4">
-              <a href="#" className="">
-                Domains
-              </a>
-            </li>
-            <li className="mb-4">
-              <a href="#" className="">
-                Team
-              </a>
-            </li>
+            <li className="mb-4">Events</li>
+            <li className="mb-4">Domains</li>
+            <li className="mb-4">Team</li>
+          </ul>
+        </div>
+        {/* Services */}
+        <div className="px-20  w-full md:w-1/3">
+          <h2 className="mb-6 text-sm font-bold text-gray-500 text-center dark:text-orange-700">
+            Domains
+          </h2>
+          <ul className="text-white dark:text-white text-center">
+            <li className="mb-4">Technical</li>
+            <li className="mb-4">Creatives</li>
+            <li className="mb-4">Corporate</li>
           </ul>
         </div>
         {/* Social media handles */}
         <div className="container mb-[30px]  w-full md:w-1/3">
           <div classNameName="md:flex md:items-center md:justify-center">
-            <div className="text-white text-center mx-auto mb-5 mt-7">
+            <div className="text-white text-center mx-auto mb-5 mt-5">
               Follow Us
             </div>
           </div>
@@ -55,7 +53,7 @@ function Footer() {
               <span className="sr-only">Facebook page</span>
             </a>
             <a
-              href="https://www.instagram.com/coding.ninjas_srm/?hl=en"
+              href="https://www.instagram.com/coding.ninjas_srm/"
               className="text-orange-700 hover:text-gray-900 dark:hover:text-white"
             >
               <svg
@@ -73,7 +71,7 @@ function Footer() {
               <span className="sr-only">Instagram page</span>
             </a>
             <a
-              href="https://mobile.twitter.com/ninjassrmg"
+              href="https://www.twitter.com/ninjassrm/"
               className="text-orange-700 hover:text-gray-900 dark:hover:text-white"
             >
               <svg
@@ -101,35 +99,11 @@ function Footer() {
             </a>
           </div>
         </div>
-        {/* Services */}
-        <div className="px-20  w-full md:w-1/3">
-          <h2 className="mb-6 text-sm font-bold text-gray-500 text-center dark:text-orange-700">
-            Domains
-          </h2>
-          <ul className="text-white dark:text-white text-center">
-            <li className="mb-4">
-              <a href="#" className="">
-                Technical
-              </a>
-            </li>
-            <li className="mb-4">
-              <a href="#" className="">
-                Creatives
-              </a>
-            </li>
-            <li className="mb-4">
-              <a href="#" className="">
-                Corporate
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div></div>
       </div>
 
       {/* Copyrights */}
       <div classNameName="dark:bg-neutral-800 dark:bg-opacity-30">
-        <div className="mt-7 pt-4 pb-4 text-center text-sm text-white dark:text-stone-200 sm:text-center text-light">
+        <div className="pb-4 text-center text-sm text-white dark:text-stone-200 sm:text-center text-light">
           © 2022 <a href="/">Coding Ninjas SRM™</a>. All Rights Reserved.
         </div>
       </div>
