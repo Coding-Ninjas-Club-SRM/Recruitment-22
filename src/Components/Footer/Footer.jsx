@@ -4,19 +4,8 @@ function Footer() {
   return (
     <footer className="dark:bg-opacity-60 backdrop-blur-lg backdrop-filter bg-neutral-900 dark:bg-neutral-900">
       <div className="flex flex-col justify-between items-center font-jetbrains gap-5 py-8 px-5 md:flex-row">
-        {/* Useful links */}
-        <div className="px-20 w-full md:w-1/3">
-          <h2 className="mb-6 text-sm font-bold text-orange-700 text-center dark:text-orange-700">
-            Useful Links
-          </h2>
-          <ul className="text-white dark:text-white text-center">
-            <li className="mb-4">Events</li>
-            <li className="mb-4">Domains</li>
-            <li className="mb-4">Team</li>
-          </ul>
-        </div>
         {/* Services */}
-        <div className="px-20  w-full md:w-1/3">
+        <div className="px-20  w-full md:w-1/2">
           <h2 className="mb-6 text-sm font-bold text-gray-500 text-center dark:text-orange-700">
             Domains
           </h2>
@@ -27,7 +16,7 @@ function Footer() {
           </ul>
         </div>
         {/* Social media handles */}
-        <div className="container mb-[30px]  w-full md:w-1/3">
+        <div className="container mb-[30px]  w-full md:w-1/2">
           <div classNameName="md:flex md:items-center md:justify-center">
             <div className="text-white text-center mx-auto mb-5 mt-5">
               Follow Us
