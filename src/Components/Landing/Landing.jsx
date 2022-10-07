@@ -120,9 +120,9 @@ function Landing() {
             number: {
               density: {
                 enable: true,
-                area: 500,
+                area: 400,
               },
-              value: 50,
+              value: 40,
             },
             opacity: {
               value: 0.5,
