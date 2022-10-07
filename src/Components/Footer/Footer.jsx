@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 function Footer() {
   return (
@@ -9,10 +10,22 @@ function Footer() {
           <h2 className="mb-6 text-sm font-bold text-gray-500 text-center dark:text-orange-700">
             Domains
           </h2>
-          <ul className="text-white dark:text-white text-center">
-            <li className="mb-4">Technical</li>
-            <li className="mb-4">Creatives</li>
-            <li className="mb-4">Corporate</li>
+          <ul className="text-white dark:text-white text-center cursor-pointer">
+            <li className="mb-4">
+              <Link to={"technical"} smooth duration={500} offset={-96}>
+                Technical
+              </Link>
+            </li>
+            <li className="mb-4">
+              <Link to={"creatives"} smooth duration={500} offset={-96}>
+                Creatives
+              </Link>
+            </li>
+            <li className="mb-4">
+              <Link to={"corporate"} smooth duration={500} offset={-96}>
+                Corporate
+              </Link>
+            </li>
           </ul>
         </div>
         {/* Social media handles */}
