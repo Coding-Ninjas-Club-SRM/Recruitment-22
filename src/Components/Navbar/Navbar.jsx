@@ -12,21 +12,6 @@ const Navbar = () => {
     return classes.filter(Boolean).join(" ");
   }
 
-  const links = [
-    {
-      id: 1,
-      link: "contact us",
-    },
-    {
-      id: 2,
-      link: "about us",
-    },
-    {
-      id: 3,
-      link: "domains",
-    },
-  ];
-
   return (
     <div
       id="navbar"
@@ -42,16 +27,19 @@ const Navbar = () => {
       </div>
 
       <ul className="hidden md:flex">
-        {links.map(({ id, link, doff }) => (
-          <li
-            key={id}
-            className="px-6 lg-col-px-12 cursor-pointer capitalize font-medium hover:scale-105 duration-200"
-          >
-            <Link to={link} smooth duration={500} offset={-96}>
-              {link}
-            </Link>
-          </li>
-        ))}
+        <li className="px-6 lg-col-px-12 cursor-pointer capitalize font-medium hover:scale-105 duration-200">
+          <a href="mailto:codingninjasatsrm@gmail.com">Contact Us</a>
+        </li>
+        <li className="px-6 lg-col-px-12 cursor-pointer capitalize font-medium hover:scale-105 duration-200">
+          <Link to={"about us"} smooth duration={500} offset={-96}>
+            About Us
+          </Link>
+        </li>
+        <li className="px-6 lg-col-px-12 cursor-pointer capitalize font-medium hover:scale-105 duration-200">
+          <Link to={"domains"} smooth duration={500} offset={-96}>
+            Domains
+          </Link>
+        </li>
       </ul>
 
       <div
@@ -64,22 +52,36 @@ const Navbar = () => {
       {nav && (
         <div className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-black">
           <ul className="flex flex-col justify-center items-center">
-            {links.map(({ id, link, moff }) => (
-              <li
-                key={id}
-                className="px-4 py-6 text-3xl capitalize font-medium"
+            <li className="px-4 py-6 text-3xl capitalize font-medium">
+              <a
+                href="mailto:codingninjasatsrm@gmail.com"
+                onClick={() => setNav(!nav)}
               >
-                <Link
-                  onClick={() => setNav(!nav)}
-                  to={link}
-                  smooth
-                  duration={500}
-                  offset={-96}
-                >
-                  {link}
-                </Link>
-              </li>
-            ))}
+                Contact Us
+              </a>
+            </li>
+            <li className="px-4 py-6 text-3xl capitalize font-medium">
+              <Link
+                onClick={() => setNav(!nav)}
+                to={"about us"}
+                smooth
+                duration={500}
+                offset={-96}
+              >
+                About Us
+              </Link>
+            </li>
+            <li className="px-4 py-6 text-3xl capitalize font-medium">
+              <Link
+                onClick={() => setNav(!nav)}
+                to={"domains"}
+                smooth
+                duration={500}
+                offset={-96}
+              >
+                Domains
+              </Link>
+            </li>
           </ul>
         </div>
       )}
