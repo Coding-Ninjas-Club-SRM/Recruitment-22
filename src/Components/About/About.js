@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.css";
-import frame from "./assets/Frame.png";
 import line from "./assets/about-line.png";
+import frame from "./assets/Frame.png";
 
 function About() {
   return (
@@ -16,10 +16,13 @@ function About() {
       <div className="middle-abt">
         <div className="ab-txt">
           <span>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu
-            rhoncus quam justo aliquet non. Potenti aliquam arcu, dignissim ut
-            sed facilisi mi suspendisse. Neque cras mi quis molestie amet.
-            Gravida gravida semper vulputate praesent
+            Coding Ninjas Club SRM, our syndicate, is one of the institute's
+            fastest-growing and one of the most popular clubs. We have fabulous
+            student engagement which in turn makes us a highly interactive and
+            informative club. We work in collaboration with the Coding Ninjas
+            company. We have a footfall of over 50,000 young and bright minds
+            from various concerts around the world. We are a diverse team of
+            budding intellectuals, who are keen and highly driven to create.
           </span>
         </div>
         <div className="img-abt">
