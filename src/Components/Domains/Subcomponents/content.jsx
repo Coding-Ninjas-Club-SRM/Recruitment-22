@@ -47,7 +47,7 @@ export const domContent = [
     image: "logo192.png",
   },
   {
-    title: "competetive programming",
+    title: "competitive programming",
     details: [
       "Does the coder inside you need a platform to kickstart your journey in competitive programming?",
       "Then, our very new addition to the club, CP domain, should be your forte.",
