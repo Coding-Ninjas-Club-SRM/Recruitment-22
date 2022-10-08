@@ -12,18 +12,38 @@ function Footer() {
           </h2>
           <ul className="text-white dark:text-white text-center cursor-pointer">
             <li className="mb-4">
-              <Link to={"technical"} smooth duration={500} offset={-96}>
-                Technical
-              </Link>
-            </li>
-            <li className="mb-4">
               <Link to={"creatives"} smooth duration={500} offset={-96}>
                 Creatives
               </Link>
             </li>
             <li className="mb-4">
+              <Link to={"editorial"} smooth duration={500} offset={-96}>
+                Editorial
+              </Link>
+            </li>
+            <li className="mb-4">
+              <Link to={"technical"} smooth duration={500} offset={-96}>
+                Technical
+              </Link>
+            </li>
+            <li className="mb-4">
               <Link to={"corporate"} smooth duration={500} offset={-96}>
                 Corporate
+              </Link>
+            </li>
+            <li className="mb-4">
+              <Link to={"sponsorship"} smooth duration={500} offset={-96}>
+                Sponsorship
+              </Link>
+            </li>
+            <li className="mb-4">
+              <Link
+                to={"competitive programming"}
+                smooth
+                duration={500}
+                offset={-96}
+              >
+                Competitive Programming
               </Link>
             </li>
           </ul>
