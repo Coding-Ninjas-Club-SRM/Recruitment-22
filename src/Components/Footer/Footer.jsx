@@ -1,7 +1,18 @@
 import React from "react";
+import Lottie from "react-lottie";
 import { Link } from "react-scroll";
+import * as animationData from "./assets/ninja.json";
 
 function Footer() {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
   return (
     <footer className="dark:bg-opacity-60 backdrop-blur-lg backdrop-filter bg-neutral-900 dark:bg-neutral-900">
       <div className="flex flex-col justify-between items-center font-jetbrains gap-5 py-8 px-5 md:flex-row">
@@ -53,6 +64,10 @@ function Footer() {
               </li>
             </ul>
           </div>
+        </div>
+        {/* Lottie Animation */}
+        <div>
+          <Lottie width={150} height={150} options={defaultOptions} />
         </div>
         {/* Social media handles */}
         <div className="container mb-[30px]  w-full md:w-1/2">
