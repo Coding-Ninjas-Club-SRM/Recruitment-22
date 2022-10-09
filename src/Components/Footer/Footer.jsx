@@ -6,47 +6,53 @@ function Footer() {
     <footer className="dark:bg-opacity-60 backdrop-blur-lg backdrop-filter bg-neutral-900 dark:bg-neutral-900">
       <div className="flex flex-col justify-between items-center font-jetbrains gap-5 py-8 px-5 md:flex-row">
         {/* Services */}
-        <div className="px-20  w-full md:w-1/2">
-          <h2 className="mb-6 text-sm font-bold text-gray-500 text-center dark:text-orange-700">
+        <div className="w-full md:w-1/2">
+          <h2 className="mb-6 text-xl font-bold text-gray-500 text-center dark:text-orange-700">
             Domains
           </h2>
-          <ul className="text-white dark:text-white text-center cursor-pointer">
-            <li className="mb-4">
-              <Link to={"creatives"} smooth duration={500} offset={-96}>
-                Creatives
-              </Link>
-            </li>
-            <li className="mb-4">
-              <Link to={"editorial"} smooth duration={500} offset={-96}>
-                Editorial
-              </Link>
-            </li>
-            <li className="mb-4">
-              <Link to={"technical"} smooth duration={500} offset={-96}>
-                Technical
-              </Link>
-            </li>
-            <li className="mb-4">
-              <Link to={"corporate"} smooth duration={500} offset={-96}>
-                Corporate
-              </Link>
-            </li>
-            <li className="mb-4">
-              <Link to={"sponsorship"} smooth duration={500} offset={-96}>
-                Sponsorship
-              </Link>
-            </li>
-            <li className="mb-4">
-              <Link
-                to={"competitive programming"}
-                smooth
-                duration={500}
-                offset={-96}
-              >
-                Competitive Programming
-              </Link>
-            </li>
-          </ul>
+          <div className="flex flex-row text-left justify-center text-sm">
+            <ul className="text-white dark:text-white text-center md:text-left cursor-pointer w-full md:w-[10vw] md:mx-10">
+              <li className="mb-4">
+                <Link to={"creatives"} smooth duration={500} offset={-96}>
+                  Creatives
+                </Link>
+              </li>
+              <li className="mb-4">
+                <Link to={"editorial"} smooth duration={500} offset={-96}>
+                  Editorial
+                </Link>
+              </li>
+              <li className="mb-4">
+                <Link to={"technical"} smooth duration={500} offset={-96}>
+                  Technical
+                </Link>
+              </li>
+            </ul>
+            <ul className="text-white dark:text-white text-center md:text-left cursor-pointer w-full md:w-[10vw] md:pl-[3vw]">
+              <li className="mb-4">
+                <Link to={"corporate"} smooth duration={500} offset={-96}>
+                  Corporate
+                </Link>
+              </li>
+              <li className="mb-4">
+                <Link to={"sponsorship"} smooth duration={500} offset={-96}>
+                  Sponsorship
+                </Link>
+              </li>
+              <li className="mb-4">
+                <Link
+                  to={"competitive programming"}
+                  smooth
+                  duration={500}
+                  offset={-96}
+                >
+                  Competitive
+                  <br />
+                  Programming
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
         {/* Social media handles */}
         <div className="container mb-[30px]  w-full md:w-1/2">
