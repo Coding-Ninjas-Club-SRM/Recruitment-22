@@ -36,9 +36,10 @@ function Landing() {
           style.glow
         }
       >
-        <p className="text-3xl hidden xs:contents sm:text-5xl md:text-6xl px-2">
-          Register now to become <br /> part of our family
-        </p>
+        <div className="text-3xl hidden xs:contents sm:text-5xl md:text-6xl px-2">
+          <p>Register now to become</p>
+          <p>part of our family</p>
+        </div>
         <p className="text-2xl xs:hidden px-3">
           Register now to become part of our family
         </p>
