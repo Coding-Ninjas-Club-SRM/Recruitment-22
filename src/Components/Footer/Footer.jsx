@@ -7,7 +7,7 @@ function Footer() {
       <div className="flex flex-col justify-between items-center font-jetbrains gap-5 py-8 px-5 md:flex-row">
         {/* Services */}
         <div className="w-full md:w-1/2">
-          <h2 className="mb-6 text-xl font-bold text-gray-500 text-center dark:text-orange-700">
+          <h2 className="mb-6 text-3xl font-bold text-gray-500 text-center dark:text-orange-700">
             Domains
           </h2>
           <div className="flex flex-row text-left justify-center text-sm">
