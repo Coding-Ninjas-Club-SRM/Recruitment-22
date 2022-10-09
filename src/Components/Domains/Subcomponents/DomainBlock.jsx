@@ -14,7 +14,7 @@ export default function DomainBlock(props) {
           className={`${style.details} ${style.font} pl-[1ch] my-3 ml-2 text-xl`}
         >
           {props.details.map((e) => (
-            <p>{e}</p>
+            <p className="mb-3">{e}</p>
           ))}
         </div>
       </div>
