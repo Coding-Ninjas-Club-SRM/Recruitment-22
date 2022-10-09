@@ -1,5 +1,13 @@
 export const domContent = [
   {
+    title: "competitive programming",
+    details: [
+      "Does the coder inside you need a platform to kickstart your journey in competitive programming?",
+      "Then, our very new addition to the club, CP domain, should be your forte.",
+    ],
+    image: "/domains/cp.svg",
+  },
+  {
     title: "creatives",
     details: [
       "There's art in everything we see and creativity in everything our mind conceives. Here in CN, we have this domain with very creative and artistic minds. There are 3 sub domains - VFX, GFX and SFX.",
@@ -8,15 +16,24 @@ export const domContent = [
       "3.  And, give astounding experiences by adding sound in SFX.",
       "It gives you the comfort to come out of your dusty dorms and let the creative worm in you taste something new!",
     ],
-    image: "logo192.png",
+    image: "/domains/creatives.svg",
   },
   {
-    title: "editorial",
+    title: "corporate",
     details: [
-      "Herein, we have writers with zeal and enthusiasm who give words that reach to the people. We write content for our website, posts, stories, articles, blogs etc.",
-      "Basically, a group full of Grammar Nazis.",
+      "If public speaking is your niche and communicating effectively is something you're a pro at, then corporate is your place to be!",
+      "From initial ideation, to handling the event - Corporate got everything that your inner extrovert needs!",
     ],
-    image: "logo192.png",
+    image: "/domains/corporate.svg",
+  },
+  {
+    title: "sponsorship",
+    details: [
+      "Have the zeal to bring in the bucks?",
+      "Sponsorship awaits you then!",
+      "Contact the companies, bring in a deal and make yourself a pro at it! ",
+    ],
+    image: "/domains/editorial.svg",
   },
   {
     title: "technical",
@@ -27,31 +44,14 @@ export const domContent = [
       "2.  Web-Development- Designing websites and solving bugs since forever.",
       "3.  App Development- Building Apps and correcting the UI.",
     ],
-    image: "logo192.png",
+    image: "/domains/technical.svg",
   },
   {
-    title: "corporate",
+    title: "editorial",
     details: [
-      "If public speaking is your niche and communicating effectively is something you're a pro at, then corporate is your place to be!",
-      "From initial ideation, to handling the event - Corporate got everything that your inner extrovert needs!",
+      "Herein, we have writers with zeal and enthusiasm who give words that reach to the people. We write content for our website, posts, stories, articles, blogs etc.",
+      "Basically, a group full of Grammar Nazis.",
     ],
-    image: "logo192.png",
-  },
-  {
-    title: "sponsorship",
-    details: [
-      "Have the zeal to bring in the bucks?",
-      "Sponsorship awaits you then!",
-      "Contact the companies, bring in a deal and make yourself a pro at it! ",
-    ],
-    image: "logo192.png",
-  },
-  {
-    title: "competitive programming",
-    details: [
-      "Does the coder inside you need a platform to kickstart your journey in competitive programming?",
-      "Then, our very new addition to the club, CP domain, should be your forte.",
-    ],
-    image: "logo192.png",
+    image: "/domains/editorial.svg",
   },
 ];
