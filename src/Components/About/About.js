@@ -1,20 +1,20 @@
 import React from "react";
-import "./About.css";
+import style from "./About.module.css";
 import line from "./assets/about-line.png";
 import frame from "./assets/Frame.png";
 
 function About() {
   return (
-    <div name="about us" className="about">
+    <div name="about us" className={style.about}>
       <div>
-        <h1 className="heading">About</h1>
+        <h1 className={style.heading}>About</h1>
       </div>
       <div>
-        <img className="line" src={line}></img>
+        <img className={style.line} src={line}></img>
       </div>
 
-      <div className="middle-abt">
-        <div className="ab-txt">
+      <div className={style.middleabt}>
+        <div className={style.abtxt}>
           <span>
             Coding Ninjas Club SRM, our syndicate, is one of the institute's
             fastest-growing and one of the most popular clubs. We have fabulous
@@ -25,7 +25,7 @@ function About() {
             budding intellectuals, who are keen and highly driven to create.
           </span>
         </div>
-        <div className="img-abt">
+        <div className={style.imgabt}>
           <img src={frame} alt="h"></img>
         </div>
       </div>
