@@ -16,7 +16,9 @@ const Navbar = () => {
     <div
       id="navbar"
       className={classNames(
-        scrollPosition > 0 ? "bg-black" : "bg-transparent",
+        scrollPosition > 0
+          ? "bg-opacity-80 backdrop-blur-xl backdrop-filter bg-black"
+          : "bg-transparent",
         "flex justify-between items-center w-full h-24 p-8 text-white text-2xl  fixed font-jetbrains z-20",
       )}
     >
