@@ -14,7 +14,7 @@ function Footer() {
   };
 
   return (
-    <footer className="dark:bg-opacity-60 backdrop-blur-lg backdrop-filter bg-neutral-900 dark:bg-neutral-900">
+    <footer className="dark:bg-opacity-60 backdrop-blur-sm backdrop-filter bg-neutral-900 dark:bg-neutral-900">
       <div className="flex flex-col justify-between items-center font-jetbrains gap-5 py-8 px-5 md:flex-row">
         {/* Services */}
         <div className="w-full md:w-1/2">
