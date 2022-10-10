@@ -7,7 +7,7 @@ function Timer() {
   const [seconds, setSeconds] = useState();
 
   const startTimer = () => {
-    const countDownDate = new Date("Oct 10, 2022 00:00:00").getTime();
+    const countDownDate = new Date("Oct 12, 2022 00:00:00").getTime();
     setInterval(() => {
       const now = new Date().getTime();
 
