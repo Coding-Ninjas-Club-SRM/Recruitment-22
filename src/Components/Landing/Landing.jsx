@@ -74,7 +74,7 @@ function Landing() {
               value: "#000000",
             },
           },
-          fpsLimit: 120,
+          fpsLimit: 60,
           interactivity: {
             events: {
               onClick: {
@@ -115,7 +115,7 @@ function Landing() {
                 default: "bounce",
               },
               random: false,
-              speed: 6,
+              speed: 4,
               straight: false,
             },
             number: {
