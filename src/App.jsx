@@ -3,6 +3,7 @@ import Domains from "./Components/Domains/Domains";
 import Footer from "./Components/Footer/Footer";
 import Landing from "./Components/Landing/Landing";
 import Navbar from "./Components/Navbar/Navbar";
+import Chat from "./Components/chatbot/chatbot";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Landing />
       <About />
       <Domains />
+      <Chat/>
       <Footer />
     </div>
   );
