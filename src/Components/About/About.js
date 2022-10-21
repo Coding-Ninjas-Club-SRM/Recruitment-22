@@ -25,10 +25,9 @@ function About() {
             budding intellectuals, who are keen and highly driven to create.
           </span>
         </div>
-        <div className={style.imgabt}>
+        <div className={`flex justify-center items-center ${style.imgabt}`}>
           <iframe
-            width="560"
-            height="315"
+            className={style.video}
             src="https://www.youtube.com/embed/5I_exRiVuQQ?controls=0"
             title="YouTube video player"
             frameborder="0"
