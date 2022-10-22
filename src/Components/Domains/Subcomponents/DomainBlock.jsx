@@ -21,7 +21,7 @@ export default function DomainBlock(props) {
       <div className={` w-[33vw] h-[33vw] ${style.imageBlock} `}>
         <img
           src={process.env.PUBLIC_URL + props.image}
-          alt={`image for ${props.title}`}
+          alt={`${props.title}`}
           className={` w-[100%] h-[100%] `}
         />
       </div>

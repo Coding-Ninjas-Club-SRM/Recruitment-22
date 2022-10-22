@@ -1,7 +1,6 @@
 import React from "react";
 import style from "./About.module.css";
 import line from "./assets/about-line.png";
-import frame from "./assets/Frame.png";
 
 function About() {
   return (
@@ -10,7 +9,7 @@ function About() {
         <h1 className={style.heading}>About</h1>
       </div>
       <div>
-        <img className={style.line} src={line}></img>
+        <img className={style.line} src={line} alt=""></img>
       </div>
 
       <div className={style.middleabt}>
