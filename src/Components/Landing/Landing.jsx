@@ -46,7 +46,7 @@ function Landing() {
       </div>
 
       <div className="font-jetbrains font-bold text-black text-center text-xl xs:text-2xl py-6 flex flex-col items-center">
-        <a href="#" className="z-10">
+        <a href="https://geb0653a2a8.typeform.com/to/lEUFOseA" className="z-10">
           <button className="w-36 h-10 xs:w-48 xs:h-16 bg-gradient-to-r from-[#F12711] to-[#F5AF19] rounded-md xs:rounded-xl">
             Apply Now!
           </button>
