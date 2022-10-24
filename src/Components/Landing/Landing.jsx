@@ -25,7 +25,7 @@ function Landing() {
         <p className="text-gray-500 text-xl xs:text-2xl flex flex-row items-center font-audiowide tracking-[0.21em] py-4">
           <MdOutlineKeyboardArrowRight />
           <MdOutlineKeyboardArrowRight className="-ml-3" />
-          Registrations closes in
+          Registration closes in
         </p>
         <Timer className="py-4" />
       </div>
