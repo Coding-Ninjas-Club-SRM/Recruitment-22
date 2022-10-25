@@ -33,7 +33,7 @@ export const domContent = [
       "Sponsorship awaits you then!",
       "Contact the companies, bring in a deal and make yourself a pro at it! ",
     ],
-    image: "/domains/editorial.svg",
+    image: "/domains/sponsorship.svg",
   },
   {
     title: "technical",
